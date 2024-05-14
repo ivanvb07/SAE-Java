@@ -12,7 +12,9 @@ public class Division extends Operation{ //initialisation de la classe Multiplic
         super(d); //appel du constructeur par copie de la classe Operation
     }
   
-    public int valeur() { //implémentation de la méthode abstraite valeur de la classe Operation
+    public int valeur() throws Exception{ //implémentation de la méthode abstraite valeur de la classe Operation
+        if (this.getOPerande1()==0 || this.getOPerande2==0 )
+            throw (new ArithmeticException());
         return this.getOPerande1()/this.getOPerande2(); //renvoie le résultat de la division des deux opérandes de l'objet courant (this)
     }
 

@@ -4,12 +4,16 @@ public class Division extends Operation{ //initialisation de la classe Multiplic
       super(); //appel du constructeur par défaut de Operation
     }
   
-    public Division(Nombre nb1, Nombre nb2){
-        super(nb1,nb2); //appel du constructeur de la classe Operation
+    public Division(Nombre nb1, Nombre nb2){ //constructeur champ-à-champ
+        super(nb1,nb2); //appel du constructeur champ-à-champ de la classe Operation
     }
-
-    public int valeur() {//renvoie le résultat de la division des deux nombres
-        return this.getOPerande1()/this.getOPerande2();
+    
+    public Division(Division d){ //constructeur par copie
+        super(d); //appel du constructeur par copie de la classe Operation
+    }
+  
+    public int valeur() { //implémentation de la méthode abstraite valeur de la classe Operation
+        return this.getOPerande1()/this.getOPerande2(); //renvoie le résultat de la division des deux opérandes de l'objet courant (this)
     }
 
     public String toString(){ //méthode toString

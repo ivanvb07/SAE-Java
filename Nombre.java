@@ -10,6 +10,10 @@ public class Nombre { //initialisation de la classe Nombre
         this.valeurNombre = nb; //valeur ajoutée en paramètre
     }
 
+    public Nombre(Nombre n){ //constructeur par copie
+        this.valeurNombre=n.valeur(); //récupére la valeur de l'objet Nombre passé en paramètre
+    }
+    
     public int valeur(){ //méthode renvoyant la valeur de l'objet Nombre
         return this.valeurNombre;
     }

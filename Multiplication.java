@@ -13,7 +13,7 @@ public class Multiplication extends Operation { //initialisation de la classe Mu
     }
   
     public int valeur(){ //implémentation de la méthode abstraite valeur() de Operation
-        return this.getOPerande1() * this.getOPerande2(); //retourne le Produit de la Multiplication des 2 Operande
+        return this.getOPerande1() * this.getOPerande2(); //retourne le produit des deux opérandes
     }
 
     public String toString(){ //méthode toString

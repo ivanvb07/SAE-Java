@@ -13,7 +13,7 @@ public class Addition extends Operation { // initialisation de la classe Additio
   }
 
   public int valeur() { // implémentation de la méthode abstraite valeur de la classe Operation
-    return this.getOPerande1().valeur() + this.getOPerande2().valeur(); // renvoie la somme des deux opérandes
+    return this.getOPerande1().valeur() + this.getOPerande2().valeur(); // renvoie la somme des valeurs des deux opérandes
   }
 
   public String toString() { // méthode toString

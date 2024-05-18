@@ -12,8 +12,7 @@ public class Division extends Operation { // initialisation de la classe Multipl
         super(d); // appel du constructeur par copie de la classe Operation
     }
 
-    public int valeur() throws ArithmeticException { // implémentation de la méthode abstraite valeur de la classe Operation en précisant qu'elle peut déclencher une exception
-                                                     // (division par 0)
+    public int valeur() throws ArithmeticException { // implémentation de la méthode abstraite valeur de la classe Operation en précisant qu'elle peut déclencher une exception (division par 0)
         if (this.getOPerande1().valeur() == 0 || this.getOPerande2().valeur() == 0) // vérifie si l'une des deux opérandes vaut 0 afin de traiter la division par zéro
             throw (new ArithmeticException()); // déclenche une exception de type arithmétique qui sera traitée par le main de la classe test CalculatriceSimple
         return this.getOPerande1().valeur() / this.getOPerande2().valeur(); // renvoie le résultat de la division des valeurs des deux opérandes de l'objet courant (this)

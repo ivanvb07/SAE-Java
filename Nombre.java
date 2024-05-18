@@ -14,13 +14,13 @@ public class Nombre { //initialisation de la classe Nombre
         this.valeurNombre=n.valeur(); //récupére la valeur de l'objet Nombre passé en paramètre
     }
     
-    public int valeur(){ //méthode renvoyant la valeur de l'objet Nombre
+    public int valeur(){ //méthode renvoyant la valeur de l'objet Nombre courant (this)
         return this.valeurNombre;
     }
 
     public String toString(){ //méthode toString
         String ch="Valeur du nombre : ";
-        ch+=this.valeur(); //appel de la méthode valeur() pour récupérer la valeur du nombre
+        ch+=this.valeur(); //appel de la méthode valeur() pour récupérer la valeur du nombre courant (this)
         return ch;
     }
 }

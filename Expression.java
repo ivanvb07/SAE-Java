@@ -1,5 +1,4 @@
 public abstract class Expression{
 
-  public double valeur;
-  }
+  public abstract double valeur;
 }

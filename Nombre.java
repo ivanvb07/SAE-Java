@@ -1,4 +1,4 @@
-public class Nombre { //initialisation de la classe Nombre
+public class Nombre extends Expression{ //initialisation de la classe Nombre héritant de la classe Expression
 
     private int valeurNombre; //attribut de classe valeurNombre de type int
 

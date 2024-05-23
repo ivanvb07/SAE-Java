@@ -21,11 +21,11 @@ public abstract class Operation extends Expression { // création de la classe a
     public abstract int valeur(); // définition de la méthode abstraite valeur() qui sera implémentée dans les sous-classes
 
     public Expression getOPerande1() { // définition de la méthode getOPerande1() qui renvoie un Objet de type Expression
-        return this.nombre1; // renvoie la première Operande de type Expression de l'Objet courant
+        return this.exp1; // renvoie la première Operande de type Expression de l'Objet courant
     }
 
     public Expression getOPerande2() { // définition de la méthode getOPerande2() qui renvoie un Objet de type Expression
-        return this.nombre2; // renvoie la deuxième Operande de type Expression l'Objet courant
+        return this.exp2; // renvoie la deuxième Operande de type Expression l'Objet courant
     }
 
 }

@@ -1,4 +1,4 @@
-public abstract class Operation { // création de la classe abstraite Operation
+public abstract class Operation extends Expression { // création de la classe abstraite Operation qui hérite de la classe Expression
 
     private Expression exp1; // attribut exp1 de type Expression
     private Expression exp2; // attribut exp2 de type Expression

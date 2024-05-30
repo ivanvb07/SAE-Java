@@ -18,8 +18,6 @@ public abstract class Operation extends Expression { // création de la classe a
         this.exp2 = o.getOPerande2(); // récupère la deuxième Operande de type Expression de l'Objet o
     }
 
-    public abstract int valeur(); // définition de la méthode abstraite valeur() qui sera implémentée dans les sous-classes
-
     public Expression getOPerande1() { // définition de la méthode getOPerande1() qui renvoie un Objet de type Expression
         return this.exp1; // renvoie la première Operande de type Expression de l'Objet courant
     }

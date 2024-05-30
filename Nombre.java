@@ -1,12 +1,12 @@
 public class Nombre extends Expression{ //initialisation de la classe Nombre héritant de la classe Expression
 
-    private int valeurNombre; //attribut de classe valeurNombre de type int
+    private double valeurNombre; //attribut de classe valeurNombre de type int
 
     public Nombre(){ //constructeur par défaut
         this.valeurNombre = 0; //valeur par défaut
     }
 
-    public Nombre(int nb){ //constructeur champ-à-champ
+    public Nombre(double nb){ //constructeur champ-à-champ
         this.valeurNombre = nb; //valeur ajoutée en paramètre
     }
 
@@ -14,7 +14,7 @@ public class Nombre extends Expression{ //initialisation de la classe Nombre hé
         this.valeurNombre=n.valeur(); //récupére la valeur de l'objet Nombre passé en paramètre
     }
     
-    public int valeur(){ //méthode renvoyant la valeur de l'objet Nombre courant (this)
+    public double valeur(){ //méthode renvoyant la valeur de l'objet Nombre courant (this)
         return this.valeurNombre;
     }
 

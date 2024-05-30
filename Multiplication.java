@@ -4,7 +4,7 @@ public class Multiplication extends Operation { // initialisation de la classe M
         super(); // appel le constructeur par défaut de Operation
     }
 
-    public Multiplication(Nombre nb1, Nombre nb2) { // constructeur champ à champ
+    public Multiplication(Expression nb1, Expression nb2) { // constructeur champ à champ
         super(nb1, nb2); // appel du constructeur champ à champ de Operation
     }
 
@@ -12,7 +12,7 @@ public class Multiplication extends Operation { // initialisation de la classe M
         super(m); // appel du constructeur par copie de Operation
     }
 
-    public int valeur() { // implémentation de la méthode abstraite valeur() de Operation
+    public double valeur() { // implémentation de la méthode abstraite valeur() de la classe Expression
         return this.getOPerande1().valeur() * this.getOPerande2().valeur(); // retourne le produit des valeurs des deux opérandes
     }
 

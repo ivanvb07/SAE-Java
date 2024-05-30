@@ -4,8 +4,8 @@ public abstract class Operation extends Expression { // création de la classe a
     private Expression exp2; // attribut exp2 de type Expression
 
     public Operation() { // constructeur par défaut
-        this.exp1 = new Nombre(); // appel du constructeur par défaut de la classe Expression qui donnera la valeur 0
-        this.exp2 = new Nombre(); // appel du constructeur par défaut de la classe Expression qui donnera la valeur 0
+        this.exp1 = new Nombre(); // appel du constructeur par défaut de la classe Nombre qui renverra la valeur 0
+        this.exp2 = new Nombre(); // appel du constructeur par défaut de la classe Nombre qui renverra la valeur 0
     }
 
     public Operation(Expression ex1, Expression ex2) { // constructeur champ à champ

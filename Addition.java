@@ -4,7 +4,7 @@ public class Addition extends Operation { // initialisation de la classe Additio
     super(); // appel du constructeur par défaut de la classe Operation
   }
 
-  public Addition(Nombre nb1, Nombre nb2) { // constructeur champ-à-champ
+  public Addition(Expression nb1, Expression nb2) { // constructeur champ-à-champ
     super(nb1, nb2); // appel du constructeur champ-à-champ de la classe Operation
   }
 
@@ -12,7 +12,7 @@ public class Addition extends Operation { // initialisation de la classe Additio
     super(a); // appel du constructeur par copie de la classe Operation
   }
 
-  public int valeur() { // implémentation de la méthode abstraite valeur de la classe Operation
+  public double valeur() { // implémentation de la méthode abstraite valeur de la classe Expression
     return this.getOPerande1().valeur() + this.getOPerande2().valeur(); // renvoie la somme des valeurs des deux opérandes
   }
 

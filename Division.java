@@ -8,7 +8,7 @@ public class Division extends Operation { // initialisation de la classe Multipl
         super(nb1, nb2); // appel du constructeur champ-à-champ de la classe Operation
     }
 
-    public Division(Division d) { // constructeur par copie
+    public Division(Operation d) { // constructeur par copie
         super(d); // appel du constructeur par copie de la classe Operation
     }
 

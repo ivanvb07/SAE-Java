@@ -8,7 +8,7 @@ public class Soustraction extends Operation { // initialisation de la classe Sou
         super(nb1, nb2); // appel du constructeur champ à champ de Operation
     }
 
-    public Soustraction(Soustraction s) { // constructeur par copie
+    public Soustraction(Operation s) { // constructeur par copie
         super(s); // appel du constructeur par copie de Operation
     }
 

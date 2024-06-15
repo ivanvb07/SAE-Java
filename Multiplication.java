@@ -8,7 +8,7 @@ public class Multiplication extends Operation { // initialisation de la classe M
         super(nb1, nb2); // appel du constructeur champ à champ de Operation
     }
 
-    public Multiplication(Multiplication m) { // constructeur par copie
+    public Multiplication(Operation m) { // constructeur par copie
         super(m); // appel du constructeur par copie de Operation
     }
 

@@ -10,7 +10,7 @@ public class Nombre extends Expression{ //initialisation de la classe Nombre hé
         this.valeurNombre = nb; //valeur ajoutée en paramètre
     }
 
-    public Nombre(Nombre n){ //constructeur par copie
+    public Nombre(Expression n){ //constructeur par copie
         this.valeurNombre=n.valeur(); //récupére la valeur de l'objet Nombre passé en paramètre
     }
     

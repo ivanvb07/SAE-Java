@@ -8,12 +8,13 @@ public class Addition extends Operation { // initialisation de la classe Additio
     super(nb1, nb2); // appel du constructeur champ-à-champ de la classe Operation
   }
 
-  public Addition(Addition a) {// constructeur par copie
+  public Addition(Operation a) {// constructeur par copie
     super(a); // appel du constructeur par copie de la classe Operation
   }
 
   public double valeur() { // implémentation de la méthode abstraite valeur de la classe Expression
-    return this.getOPerande1().valeur() + this.getOPerande2().valeur(); // renvoie la somme des valeurs des deux opérandes
+    return this.getOPerande1().valeur() + this.getOPerande2().valeur(); // renvoie la somme des valeurs des deux
+                                                                        // opérandes
   }
 
   public String toString() { // méthode toString
